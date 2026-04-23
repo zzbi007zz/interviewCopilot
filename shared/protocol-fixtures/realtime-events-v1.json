@@ -1,0 +1,79 @@
+{
+  "protocolVersion": "1.0.0",
+  "events": [
+    {
+      "protocolVersion": "1.0.0",
+      "type": "transcript.partial",
+      "timestamp": "2026-04-23T10:00:00.000Z",
+      "sessionId": "session-001",
+      "payload": {
+        "text": "can you explain page object model",
+        "language": "en"
+      }
+    },
+    {
+      "protocolVersion": "1.0.0",
+      "type": "transcript.final",
+      "timestamp": "2026-04-23T10:00:01.000Z",
+      "sessionId": "session-001",
+      "payload": {
+        "text": "Can you explain page object model?",
+        "language": "en",
+        "confidence": 0.97
+      }
+    },
+    {
+      "protocolVersion": "1.0.0",
+      "type": "intent.detected",
+      "timestamp": "2026-04-23T10:00:01.100Z",
+      "sessionId": "session-001",
+      "payload": {
+        "questionType": "conceptual",
+        "keywords": ["page object model", "selenium"],
+        "language": "en"
+      }
+    },
+    {
+      "protocolVersion": "1.0.0",
+      "type": "answer.generated",
+      "timestamp": "2026-04-23T10:00:01.500Z",
+      "sessionId": "session-001",
+      "payload": {
+        "sourceText": "Can you explain page object model?",
+        "questionType": "conceptual",
+        "optionA": [
+          "Use BasePage plus PageObjects per screen",
+          "Keep locators and actions together per page"
+        ],
+        "optionB": [
+          "Use component objects for reusable fragments",
+          "Reduce locator duplication across tests"
+        ],
+        "language": "en",
+        "fallbackUsed": false,
+        "qcStatus": "passed"
+      }
+    },
+    {
+      "protocolVersion": "1.0.0",
+      "type": "status.update",
+      "timestamp": "2026-04-23T10:00:01.700Z",
+      "sessionId": "session-001",
+      "payload": {
+        "state": "responding",
+        "message": "Answer ready"
+      }
+    },
+    {
+      "protocolVersion": "1.0.0",
+      "type": "error",
+      "timestamp": "2026-04-23T10:00:02.000Z",
+      "sessionId": "session-001",
+      "payload": {
+        "code": "ASR_TIMEOUT",
+        "message": "Streaming ASR timeout",
+        "retryable": true
+      }
+    }
+  ]
+}
