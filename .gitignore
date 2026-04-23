@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+
+# Local environment
+.env
+.env.local
+!.env.example
+
+# Local workspace artifacts
+_workspace/
+repomix-output.xml
+
+# Python cache artifacts
+__pycache__/
+*.py[cod]
+
+# Web build artifacts
+web/node_modules/
+web/dist/
+web/coverage/
+web/tsconfig.tsbuildinfo
+web/vite.config.js
+
+# TypeScript emit artifacts kept out of source tree
+web/src/**/*.js
+web/src/**/*.js.map
+shared/realtime-event-contracts.js
